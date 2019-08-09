@@ -5,11 +5,12 @@
    <title>Boat Ride Adventures</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <script src="https://kit.fontawesome.com/2194996be4.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400,400i|Roboto:400,700&display=swap" rel="stylesheet"> 
    <link rel="stylesheet" href="styles/style.css"/>
 </head>
 <body>
-    <header>
-        <div class="wrapper">
+    <header class="index-header">
+        <div class="container header-container">
             <nav>
                 <ul>
                     <li><a href="#home">home</a></li>
@@ -19,95 +20,117 @@
                 </ul>
             </nav>
             <h1>boat ride adventures</h1>
-            <figure>
-                <img src="assets/home-box-header.png" alt="White big boat at high speed">
-            </figure>
         </div>
     </header>
     <main>
-        <section>
+        <section class="about" id="about">
             <div class="wrapper">
-                <div class="container">
-                    <div class="container">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h2>new destinations</h2>
-                    </div>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis. Mauris tempus velit sem, sit amet emperdiet dolor placerat.</p>
+                <div class="container header-boat">
+                    <figure>
+                        <img src="assets/home-box-header.png" alt="White big boat at high speed">
+                    </figure>
                 </div>
-                <div class="container">
-                    <div class="container">
-                        <div class="container">
-                            <i class="fas fa-users"></i>
-                            <h2>community</h2>
+                <div class="container container-boxes">
+                    <div class="container box">
+                        <div class="i-container">
+                            <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis. Mauris tempus velit sem, sit amet emperdiet dolor placerat.</p>
+                        <div class="container box-text">
+                            <h2>new destinations</h2>
+                            <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis. Mauris tempus velit sem, sit amet emperdiet dolor placerat.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="container">
-                    <div class="container">
-                        <i class="fas fa-file"></i>
-                        <h2>blog</h2>
+                    <div class="container box">
+                        <div class="i-container">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class=" container box-text">
+                            <h2>community</h2>
+                            <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis. Mauris tempus velit sem, sit amet emperdiet dolor placerat.</p>
+                        </div>
                     </div>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis. Mauris tempus velit sem, sit amet emperdiet dolor placerat.</p>
-                </div>
-                <div class="container">
-                    <div class="container">
-                        <i class="fas fa-phone"></i>
-                        <h2>get in touch</h2>
+                    <div class="container box">
+                        <div class="container">
+                            <div class="i-container">
+                                <i class="fas fa-file"></i>
+                            </div>
+                        </div>
+                        <div class="container box-text">
+                            <h2>blog</h2>
+                            <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis. Mauris tempus velit sem, sit amet emperdiet dolor placerat.</p>
+                        </div>
                     </div>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis. Mauris tempus velit sem, sit amet emperdiet dolor placerat.</p>
+                    <div class="container box">
+                        <div class="i-container">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="box-text container">
+                            <h2>get in touch</h2>
+                            <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis. Mauris tempus velit sem, sit amet emperdiet dolor placerat.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="program" id="program">
             <div class="wrapper">
                 <div class="container">
-                    <figure>
-                        <img src="assets/left-image.jpg" alt="white boat in dark blue ocean">
-                    </figure>
-                    <div>
+                    <div class="figure-container figure-container1 box">
+                        <figure class="figure1">
+                            <img src="assets/left-image.jpg" alt="white boat in dark blue ocean">
+                        </figure>
+                    </div>
+                    <div class="box box1">
                         <h3>our program</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel</p>
                         <a href="#" class="yellow-button">read more</a>
                     </div>
-                    <figure>
-                        <img src="assets/right-image.jpg" alt="front part of a boat viewed from a top angle over cristalin water">
-                    </figure>
-                    <div>
-                        <h3>our program</h3>
+                    <div class="box box2">
+                        <h3>new lcoations</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel</p>
                         <a href="#" class="yellow-button">read more</a>
+                    </div>
+                    <div class="figure-container figure-container2 box">
+                        <figure class="figure2">
+                            <img src="assets/right-image.jpg" alt="front part of a boat viewed from a top angle over cristalin water">
+                        </figure>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="extra-days">
             <div class="wrapper">
                 <div class="container">
                     <h2>extra vacation days?</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis. Vestibulum ultricies, felis in lacinia porttitor, tortor metus convallisaugue, at fermentum diam erat</p>
-                    <a href="#" class="yellow-button">find out more</a>
-                </div>
-            </div>
-            <div>
-                <img src="assets/banner.jpg" alt="5 little boats are being used by people in cristalin blue lake with rocky mountains in the background">
-            </div>
-        </section>
-        <section>
-            <div class="wrapper">
-                <div class="container">
-                    <figure>
-                        <img src="assets/small-box.jpg" alt="human using a black hat contemplating icebergs">
-                    </figure>
-                    <div class="">
-                        <h2>win trip of a lifetime</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo. Vestibulum aliquam hendrerit molestie. Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar, tortor eros facilisis libero, vitae commodo nunc quam et ligula. Ut nec ipsum sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. integer id nisi nec nulla luctus lacinia non eu turpis. Etiam in ex imperdiet justo tincidund egestat. Ut porttitor ac augue cursus tincidunt sit amet</p>
+                    <div>
                         <a href="#" class="yellow-button">find out more</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <div>
+            <img src="assets/banner.jpg" alt="5 little boats are being used by people in cristalin blue lake with rocky mountains in the background">
+        </div>
+        <section class="win-trip">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="box win-box1">
+                        <figure>
+                            <img src="assets/small-box.jpg" alt="human using a black hat contemplating icebergs">
+                        </figure>
+                    </div>
+                    <div class="box win-box2">
+                        <h2>win trip of a lifetime</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo. Vestibulum aliquam hendrerit molestie. Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar, tortor eros facilisis libero, vitae commodo nunc quam et ligula. Ut nec ipsum sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. integer id nisi nec nulla luctus lacinia non eu turpis. Etiam in ex imperdiet justo tincidund egestat. Ut porttitor ac augue cursus tincidunt sit amet</p>
+                        <div>
+                            <a href="#" class="yellow-button">find out more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
             <div class="wrapper">
                 <ul>
                     <li><img src="assets/gallery-image-1.jpg" alt="white boat sailing in open sea"></li>

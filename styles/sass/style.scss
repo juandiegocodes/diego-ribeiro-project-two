@@ -1,0 +1,270 @@
+@import "setup";
+$primary-color: #ffffff;
+$secondary-color: #0d457f;
+$third-color: #fdd908;
+$fourth-color: #eafefc;
+
+// general style
+
+html {
+    font-size: 125%;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $primary-color;
+}
+
+nav {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+header {
+    height: 80vh;
+    width: 100%;
+}
+
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+}
+
+.yellow-button {
+    padding: 0.5rem 1rem;
+    background-color: $third-color;
+    text-transform: uppercase;
+    color: $secondary-color;
+    display: inline-block;
+    margin-top:2rem;
+}
+
+h1,h2,h3,.yellow-button{
+    font-family: 'IM Fell English', serif;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 79px;
+    color: $third-color;
+    margin-left: 7.5%;
+    width: 50%;
+}
+
+h2 {
+    margin:0;
+    font-size: 45px;
+    line-height: 99.8px;
+    color: $secondary-color;
+}
+
+h3{
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 1.3px;
+    line-height: 58px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+p {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin:0;
+}
+
+// Header
+
+.index-header {
+    background: url(../assets/home-header.jpg) no-repeat;
+    background-size: cover;
+}
+
+.header-container{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    ul {
+        display: flex;
+        margin-left:7.5%;
+        a {
+            display: block;
+            padding: 1rem;
+        }       
+    }
+}
+
+// about section
+
+.about {
+    background-color: $fourth-color;
+    .header-boat {
+        justify-content: flex-end;
+        position: relative;
+        figure {
+            width: 65%;
+            position: absolute;
+            bottom: -9rem;
+            left:43.8%;
+        }
+    }
+    .container-boxes{
+        margin-top: 17%;
+        padding-bottom: 13%;
+        flex-wrap: wrap;
+        .box{
+            width: 50%;
+        }
+    }
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.i-container {
+    padding-top: 1rem;
+    margin-right: 1rem;
+}
+
+.i-container i {
+    background: $third-color;
+    padding:15px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color:$secondary-color;
+}
+
+// program section
+
+.program {
+    background-color: $secondary-color;
+    padding-bottom: 2rem;
+    .container{
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 50%;
+        color: white;
+    }
+}
+
+.figure-container {
+    background-color: $third-color;
+    position:relative;
+    figure {
+        position: relative;
+    }
+}
+
+.figure-container1{
+    bottom:10px;
+    right: 80px;
+    .figure1 {
+        bottom: 21px;
+        right:13px;
+    }
+}
+
+.figure-container2 {
+    top:59px;
+    left:75px;
+    .figure2{
+        bottom:15px;
+        left:13px;
+    }
+}
+
+.box1 {
+    padding-left: 8%;
+    padding-top: 5%;
+}
+
+.box2 {
+    text-align: right;
+    padding-right: 7%;
+    padding-top: 5%;
+}
+
+// extra vacations days?
+
+.extra-days{
+    background-color: $fourth-color;
+    padding: 7% 4%;
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+} 
+
+// win-trip
+
+.win-trip {
+    background-color: $fourth-color;
+    padding: 7% 4%;
+    .container {
+        justify-content: space-between;
+        .win-box1 {
+            width: 40%;
+            padding-right: 7%;
+            display: flex;
+            align-items: center;
+        }
+        .win-box2{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.win-box1 figure{
+    background-color: $third-color;
+    img {
+        position: relative;
+        bottom:1rem;
+        left:7%;
+    }
+}
+
+// gallery
+
+.gallery {
+    background-color: $secondary-color;
+    padding: 7% 4%;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+            width: 32%;
+        }
+    }
+}
+
+//  footer
+footer {
+    background-color: $third-color;
+    text-align: center;
+    padding: 1% 0;
+}
