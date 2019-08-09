@@ -227,7 +227,7 @@ header {
   margin-top: 2rem;
 }
 
-h1, h2, h3, .yellow-button {
+h1, h2, h3, h4, .yellow-button {
   font-family: 'IM Fell English', serif;
   text-transform: uppercase;
   font-style: italic;
@@ -236,8 +236,8 @@ h1, h2, h3, .yellow-button {
 h1 {
   font-size: 79px;
   color: #fdd908;
-  margin-left: 7.5%;
   width: 50%;
+  margin: 0 0 4% 7.5%;
 }
 
 h2 {
@@ -252,6 +252,13 @@ h3 {
   font-size: 40px;
   letter-spacing: 1.3px;
   line-height: 58px;
+}
+
+h4 {
+  font-size: 22.4px;
+  line-height: 58px;
+  font-style: italic;
+  letter-spacing: 0.8px;
 }
 
 img {
@@ -294,26 +301,29 @@ p {
   padding: 1rem;
 }
 
+.header-bottom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header-bottom-container figure {
+  position: relative;
+  top: 5rem;
+}
+
 .about {
   background-color: #eafefc;
 }
 
-.about .header-boat {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  position: relative;
-}
-
-.about .header-boat figure {
-  width: 65%;
-  position: absolute;
-  bottom: -9rem;
-  left: 43.8%;
-}
-
 .about .container-boxes {
-  margin-top: 17%;
+  padding-top: 15%;
   padding-bottom: 13%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -356,49 +366,48 @@ p {
       flex-wrap: wrap;
 }
 
-.program .box {
+.program .container .box {
   width: 50%;
   color: white;
 }
 
-.figure-container {
-  background-color: #fdd908;
+.figure1 {
+  -webkit-box-shadow: #fdd908 15px 15px;
+          box-shadow: #fdd908 15px 15px;
   position: relative;
+  right: 9%;
+  bottom: 1rem;
 }
 
-.figure-container figure {
+.figure1 img {
+  height: 100%;
+}
+
+.figure2 {
+  -webkit-box-shadow: #fdd908 -15px 15px;
+          box-shadow: #fdd908 -15px 15px;
   position: relative;
+  left: 9%;
+  top: 3rem;
 }
 
-.figure-container1 {
-  bottom: 10px;
-  right: 80px;
-}
-
-.figure-container1 .figure1 {
-  bottom: 21px;
-  right: 13px;
-}
-
-.figure-container2 {
-  top: 59px;
-  left: 75px;
-}
-
-.figure-container2 .figure2 {
-  bottom: 15px;
-  left: 13px;
+.figure2 img {
+  height: 100%;
 }
 
 .box1 {
   padding-left: 8%;
-  padding-top: 5%;
+  padding-top: 2.5rem;
 }
 
 .box2 {
+  padding-right: 8%;
+  padding-top: 2.5rem;
   text-align: right;
-  padding-right: 7%;
-  padding-top: 5%;
+}
+
+.box2 p {
+  text-align: left;
 }
 
 .extra-days {
@@ -430,7 +439,6 @@ p {
 
 .win-trip .container .win-box1 {
   width: 40%;
-  padding-right: 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,14 +458,9 @@ p {
           flex-direction: column;
 }
 
-.win-box1 figure {
-  background-color: #fdd908;
-}
-
-.win-box1 figure img {
-  position: relative;
-  bottom: 1rem;
-  left: 7%;
+.win-trip figure {
+  -webkit-box-shadow: #fdd908 -15px 15px;
+          box-shadow: #fdd908 -15px 15px;
 }
 
 .gallery {
@@ -484,4 +487,86 @@ footer {
   background-color: #fdd908;
   text-align: center;
   padding: 1% 0;
+}
+
+.blog-header {
+  background: url(../assets/blog-header.jpg) no-repeat;
+  background-size: cover;
+}
+
+.blog-header .header-container {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.blog-header .header-container h1 {
+  color: white;
+  margin-top: 8%;
+}
+
+.blog-page {
+  background-color: #eafefc;
+}
+
+.blog-page .blog-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 25%;
+}
+
+.blog-page .blog-container article {
+  width: 55%;
+}
+
+aside {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+aside div {
+  background-color: #0d457f;
+}
+
+aside div h4 {
+  color: #fdd908;
+}
+
+aside div p {
+  color: white;
+}
+
+aside div ul {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+aside div li {
+  color: white;
+}
+
+aside div div {
+  padding: 2%;
+}
+
+aside div figure {
+  position: relative;
+  right: 20%;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }

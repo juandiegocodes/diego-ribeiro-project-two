@@ -52,7 +52,7 @@ header {
     margin-top:2rem;
 }
 
-h1,h2,h3,.yellow-button{
+h1,h2,h3,h4,.yellow-button{
     font-family: 'IM Fell English', serif;
     text-transform: uppercase;
     font-style: italic;
@@ -61,8 +61,8 @@ h1,h2,h3,.yellow-button{
 h1 {
     font-size: 79px;
     color: $third-color;
-    margin-left: 7.5%;
     width: 50%;
+    margin: 0 0 4% 7.5%;
 }
 
 h2 {
@@ -79,6 +79,13 @@ h3{
     line-height: 58px;
 }
 
+h4{
+    font-size: 22.4px;
+    line-height: 58px;
+    font-style: italic;
+    letter-spacing: 0.8px;
+}
+
 img {
     width: 100%;
     display: block;
@@ -90,6 +97,8 @@ p {
     letter-spacing: 1px;
     margin:0;
 }
+
+// _________index.html starts here_______________________
 
 // Header
 
@@ -112,22 +121,23 @@ p {
     }
 }
 
+.header-bottom-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    figure {
+        position: relative;
+        top: 5rem;
+    }
+}
+
+
 // about section
 
 .about {
     background-color: $fourth-color;
-    .header-boat {
-        justify-content: flex-end;
-        position: relative;
-        figure {
-            width: 65%;
-            position: absolute;
-            bottom: -9rem;
-            left:43.8%;
-        }
-    }
     .container-boxes{
-        margin-top: 17%;
+        padding-top: 15%;
         padding-bottom: 13%;
         flex-wrap: wrap;
         .box{
@@ -161,48 +171,43 @@ p {
     padding-bottom: 2rem;
     .container{
         flex-wrap: wrap;
-    }
-    .box {
-        width: 50%;
-        color: white;
-    }
-}
-
-.figure-container {
-    background-color: $third-color;
-    position:relative;
-    figure {
-        position: relative;
+        .box {
+            width: 50%;
+            color: white;
+        }
     }
 }
-
-.figure-container1{
-    bottom:10px;
-    right: 80px;
-    .figure1 {
-        bottom: 21px;
-        right:13px;
+.figure1{
+    box-shadow: $third-color 15px 15px;
+    position: relative;
+    right:9%;
+    bottom: 1rem;
+    img {
+        height: 100%;
     }
 }
-
-.figure-container2 {
-    top:59px;
-    left:75px;
-    .figure2{
-        bottom:15px;
-        left:13px;
+.figure2{
+    box-shadow: $third-color -15px 15px;
+    position: relative;
+    left:9%;
+    top:3rem;
+    img {
+        height:100%;
     }
 }
 
 .box1 {
     padding-left: 8%;
-    padding-top: 5%;
+    padding-top: 2.5rem;
 }
 
 .box2 {
+    padding-right: 8%;
+    padding-top: 2.5rem;
     text-align: right;
-    padding-right: 7%;
-    padding-top: 5%;
+    p {
+        text-align: left;
+    }
 }
 
 // extra vacations days?
@@ -226,7 +231,6 @@ p {
         justify-content: space-between;
         .win-box1 {
             width: 40%;
-            padding-right: 7%;
             display: flex;
             align-items: center;
         }
@@ -238,13 +242,8 @@ p {
     }
 }
 
-.win-box1 figure{
-    background-color: $third-color;
-    img {
-        position: relative;
-        bottom:1rem;
-        left:7%;
-    }
+.win-trip figure{
+    box-shadow: $third-color -15px 15px;
 }
 
 // gallery
@@ -267,4 +266,68 @@ footer {
     background-color: $third-color;
     text-align: center;
     padding: 1% 0;
+}
+
+// ________________________Index.html finish_______________
+
+// ________________-blog.html starts___________
+
+// header
+
+.blog-header{
+    background: url(../assets/blog-header.jpg) no-repeat;
+    background-size: cover;
+    .header-container {
+        justify-content: flex-start;
+        h1{
+            color: white;
+             margin-top: 8%;
+        }
+    }
+}
+
+// main section blog
+.blog-page{
+    background-color: $fourth-color;
+    .blog-container {
+        display: flex;
+        padding-top: 25%;
+        article {
+            width: 55%;
+        }
+    }
+}
+
+aside {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    div {
+        background-color: $secondary-color;
+        h4 {
+            color:$third-color;
+        }
+        p {
+            color: white;
+        }
+        ul {
+            list-style: disc;
+            list-style-position: inside;
+        }
+        li {
+            color: white;
+        }
+        div {
+            padding: 2%;
+        }
+        figure {
+            position: relative;
+            right:20%;
+        }
+    }
+}
+
+article {
+    display: flex;
+    flex-direction: column;
 }
