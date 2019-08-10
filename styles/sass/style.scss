@@ -80,10 +80,16 @@ h3{
 }
 
 h4{
-    font-size: 22.4px;
+    font-size: 25px;
     line-height: 58px;
     font-style: italic;
     letter-spacing: 0.8px;
+}
+
+h5 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin:0.25rem;
 }
 
 img {
@@ -97,6 +103,17 @@ p {
     letter-spacing: 1px;
     margin:0;
 }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
 
 // _________index.html starts here_______________________
 
@@ -291,43 +308,155 @@ footer {
     background-color: $fourth-color;
     .blog-container {
         display: flex;
-        padding-top: 25%;
-        article {
-            width: 55%;
+        margin-top: 12.5%;
+        .article-container {
+            width: 60%;
+        }
+        aside {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
         }
     }
 }
-
-aside {
-    width: 45%;
+.aside-container{
     display: flex;
     flex-direction: column;
-    div {
-        background-color: $secondary-color;
-        h4 {
-            color:$third-color;
-        }
-        p {
-            color: white;
-        }
-        ul {
-            list-style: disc;
-            list-style-position: inside;
-        }
-        li {
-            color: white;
-        }
-        div {
-            padding: 2%;
-        }
-        figure {
-            position: relative;
-            right:20%;
+    align-items: center;
+    figure {
+        width: 79%;
+        align-self: flex-start;
+        position: relative;
+        bottom:67%;
+        img {
+            display: block;
+            height: 100%;
+            width: 100%;
         }
     }
 }
+.aside-text-container {
+    background-color: $secondary-color;
+    padding: 75% 3% 3% 3%;
+    width: 65%;
+    h4 {
+        color:$third-color;
+        margin: 0;
+    }
+    p {
+        color: white;
+        margin-bottom: 14%;
+    }
+    ul {
+        list-style: disc;
+        list-style-position: inside;
+    }
+    li {
+        color: white;
+        padding-bottom: 3%;
+    }
+}
+// article
+
 
 article {
     display: flex;
     flex-direction: column;
+    position: relative;
+    width: 100%;
+    bottom:13%;
+    margin-bottom: -20%;
+}
+
+.img-container{
+    box-shadow: inset 29px -13px $third-color;
+    width: 98%;
+    figure {
+        position: relative;
+        bottom:0.65rem;
+        left:2%;
+    }
+}
+.text-container {
+    box-shadow: inset 2px -2px 0px 2px $third-color;
+    .deep-text-container {
+        margin-left:5%;
+        padding-bottom: 9%;
+        padding-left: 5%;
+        padding-top: 3%; 
+        p {
+            padding-bottom: 3%;
+        }
+    }
+}
+
+.comments {
+    margin-left:5%;
+    padding-bottom: 9%;
+    padding-left: 5%;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    h3 {
+        color: $secondary-color;
+    }
+}
+
+.comment-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15%;
+    figure {
+        width: 10%;
+    }
+    .comment-text {
+        width: 90%;
+        padding: 0 4%;
+        h5{
+            font-weight: bold;
+            color:$secondary-color;
+        }
+    }
+}
+
+// 
+
+.form-blog {
+    display: flex;
+    flex-direction: column;
+    .input-container {
+        display: flex;
+        input[type="text"],input[type="email"] {
+            background: none;
+            border: none;
+            width: 45%;
+            padding: 1rem;
+            padding-left: 2rem;
+            border-bottom: 2px solid $third-color;
+            margin-right: 5%
+        }
+        input::placeholder {
+            opacity: 1;
+        }
+    }
+}
+
+.text-area-container {
+    margin-right: 5%;
+    margin-top: 5%;
+    textarea{
+        width: 100%;
+        background: none;
+        border: 2px $third-color solid;
+        padding: 2rem;
+    }
+    textarea::placeholder {
+        opacity: 1;
+    }
+}
+
+input[type="submit"] {
+    width: 95%;
+    background: $secondary-color;
+    color: $third-color;
 }
