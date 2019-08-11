@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <title>Boat Ride Adventures</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <script src="https://kit.fontawesome.com/2194996be4.js"></script>
-   <link rel="stylesheet" href="styles/style.css"/>
-</head>
+        <head>
+            <meta charset="UTF-8">
+            <title>Boat Ride Adventures</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script src="https://kit.fontawesome.com/2194996be4.js"></script>
+            <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400,400i|Roboto:400,700&display=swap" rel="stylesheet"> 
+            <link rel="stylesheet" href="styles/style.css"/>
+        </head>
 <body>
-    <header>
+    <header class="get-in-touch-header">
         <div class="wrapper">
-            <nav>
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="blog.html">blog</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </ul>
-            </nav>
-            <h1>get in touch</h1>
+            <div class="header-container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </nav>
+                <h1>get in touch</h1>
+            </div>
         </div>
     </header>
     <main>
-        <section>
-            <div class="wrapper">
-                <div>
+        <section class="contact">
+            <div class="contact-container">
+                <div class="contact-box1">
                     <div>
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-instagram"></i>
@@ -37,21 +40,27 @@
                     <p>Toronto,Ontario</p>
                     <p>M5V2D5</p>
                 </div>
-                <div>
-                    <div>
-                        <label for="name-contact">Enter Name</label>
-                        <input type="text" class="name" id="name-contact" name="name">
-                        <label for="email-contact">Enter Email</label>
-                        <input type="email" class="email" id="email-contact" name="email">
-                        <label for="comment">Enter your comment</label>
+                <div class="contact-box2">
+                    <div class="form-blog">
+                        <form action="">
+                            <div class="input-container">
+                                <label for="name" class="sr-only">Enter Name</label>
+                                <input type="text" class="name" id="name" name="name" placeholder="Name">
+                                <label for="email" class="sr-only">Enter Email</label>
+                                <input type="email" class="email" id="email" name="email" placeholder="Email address">
+                            </div>
+                            <label for="comment" class="sr-only">Enter your comment</label>
+                            <div class="text-area-container">
+                                <textarea name="comment" id="comment" cols="20" rows="6" placeholder="Message"></textarea>
+                            </div>
+                            <input type="submit" class="yellow-button" value="SUBMIT">
+                        </form>
                     </div>
-                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-                    <input type="submit" class="yellow-button">
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="contact-footer">
         <p>Copyrightⓒ 2019 Hackeryou</p>
     </footer>
 </body>

@@ -659,6 +659,7 @@ article {
 
 .comments h3 {
   color: #0d457f;
+  margin: 7% 0;
 }
 
 .comment-box {
@@ -759,4 +760,112 @@ input[type="submit"] {
   width: 95%;
   background: #0d457f;
   color: #fdd908;
+}
+
+.get-in-touch-header {
+  background: url(../assets/contact-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.get-in-touch-header h1 {
+  margin-top: 10%;
+  color: white;
+}
+
+.contact {
+  background-color: #eafefc;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: -3%;
+}
+
+.contact-box1 {
+  width: 30%;
+}
+
+.contact-box2 {
+  width: 70%;
+}
+
+.contact-box2 .form-blog {
+  background-color: #0d457f;
+  padding: 4rem 2rem;
+  width: 90%;
+  -webkit-box-shadow: #fdd908 25px 25px;
+          box-shadow: #fdd908 25px 25px;
+  position: relative;
+  bottom: 30%;
+}
+
+.contact-box2 .form-blog input[type="text"], .contact-box2 .form-blog input[type="email"] {
+  padding-left: 1rem;
+}
+
+.contact-box2 .form-blog input::-webkit-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.contact-box2 .form-blog input:-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.contact-box2 .form-blog input::-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.contact-box2 .form-blog input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.contact-box2 .form-blog textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+.contact-box2 .form-blog textarea:-ms-input-placeholder {
+  color: white;
+}
+
+.contact-box2 .form-blog textarea::-ms-input-placeholder {
+  color: white;
+}
+
+.contact-box2 .form-blog textarea::placeholder {
+  color: white;
+}
+
+.contact-box2 .form-blog input[type="submit"] {
+  background-color: #fdd908;
+  color: #0d457f;
+}
+
+.contact-box1 {
+  padding: 5%;
+}
+
+.contact-box1 p:first-of-type {
+  padding-bottom: 2rem;
+}
+
+.contact-box1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-box1 div i {
+  padding: 1rem 1.25rem 1rem 0;
+  color: #0d457f;
+}
+
+.contact-footer {
+  color: #0d457f;
 }

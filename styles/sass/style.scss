@@ -399,6 +399,7 @@ article {
     flex-direction: column;
     h3 {
         color: $secondary-color;
+        margin: 7% 0;
     }
 }
 
@@ -459,4 +460,75 @@ input[type="submit"] {
     width: 95%;
     background: $secondary-color;
     color: $third-color;
+}
+
+// _______________contact_______________________
+
+.get-in-touch-header {
+    background: url(../assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1 {
+        margin-top: 10%;
+        color: white;
+    }
+}
+
+.contact {
+    background-color: $fourth-color;
+}
+
+.contact-container {
+    display: flex;
+    margin-bottom: -3%;
+}
+
+.contact-box1 {
+    width: 30%;
+}
+
+.contact-box2{
+    width: 70%;
+    .form-blog {
+        background-color: $secondary-color;
+        padding: 4rem 2rem;
+        width: 90%;
+        box-shadow: $third-color 25px 25px;
+        position: relative;
+        bottom: 30%;
+        input[type="text"],input[type="email"] {
+
+            padding-left: 1rem;
+
+        }
+        input::placeholder {
+            color: white;
+            opacity: 1;
+        }
+        textarea::placeholder {
+            color: white;
+        }
+        input[type="submit"]{
+            background-color: $third-color;
+            color: $secondary-color;
+        }
+    }
+}
+
+.contact-box1{
+    padding: 5%;
+    p:first-of-type {
+        padding-bottom: 2rem;
+    }
+    div{
+        display: flex;
+        i {
+            padding: 1rem 1.25rem 1rem 0;
+            color: $secondary-color;
+        }
+    }
+}
+
+.contact-footer {
+    color: $secondary-color;
 }
