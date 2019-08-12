@@ -227,6 +227,19 @@ header {
   margin-top: 2rem;
 }
 
+.yellow-button:hover {
+  border: 3px white solid;
+  border-radius: 50px;
+}
+
+.yellow-button:active {
+  background-color: #e2c313;
+  -webkit-box-shadow: 0 5px #666;
+          box-shadow: 0 5px #666;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
 h1, h2, h3, h4, .yellow-button {
   font-family: 'IM Fell English', serif;
   text-transform: uppercase;
@@ -316,6 +329,22 @@ p {
 .header-container ul a {
   display: block;
   padding: 1rem;
+}
+
+.header-container ul li:hover::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 5px;
+  position: relative;
+  margin-left: 10%;
+  bottom: 20%;
+  background: #fdd908;
+  border-radius: 50px;
+}
+
+.header-container ul a:focus {
+  border: 4px solid #fdd908;
 }
 
 .header-bottom-container {
@@ -740,6 +769,16 @@ article {
   opacity: 1;
 }
 
+.form-blog .input-container input[type="text"]:focus, .form-blog .input-container input[type="email"]:focus {
+  background-color: #fdd908;
+  border-radius: 50px;
+  font-size: 1.5rem;
+}
+
+.form-blog .input-container input[type="text"]:active, .form-blog .input-container input[type="email"]:active {
+  border: 1rem red solid;
+}
+
 .text-area-container {
   margin-right: 5%;
   margin-top: 5%;
@@ -750,6 +789,7 @@ article {
   background: none;
   border: 2px #fdd908 solid;
   padding: 2rem;
+  resize: none;
 }
 
 .text-area-container textarea::-webkit-input-placeholder {
@@ -768,10 +808,24 @@ article {
   opacity: 1;
 }
 
+.text-area-container textarea:focus {
+  background-color: #fdd908;
+  font-size: 2rem;
+}
+
+.text-area-container textarea:active {
+  border: 1rem red solid;
+}
+
 input[type="submit"] {
   width: 95%;
   background: #0d457f;
   color: #fdd908;
+  margin-bottom: 4%;
+}
+
+input[type="submit"]:active {
+  background-color: #022636;
 }
 
 .get-in-touch-header {
@@ -1106,7 +1160,7 @@ input[type="submit"] {
 }
 
 /* Landscape phones and down */
-@media (max-width: 580px) {
+@media (max-width: 580px), (max-height: 800px) {
   .header-bottom-container h1 {
     font-size: 40px;
   }
@@ -1182,6 +1236,12 @@ input[type="submit"] {
   .contact-box2 .form-blog {
     width: 98%;
     padding: 4rem 1rem;
+  }
+  .form-blog .input-container input[type="text"]:focus, .form-blog .input-container input[type="email"]:focus {
+    font-size: 1rem;
+  }
+  .form-blog .input-container input[type="text"]:active, .form-blog .input-container input[type="email"]:active {
+    border: 0.25rem red solid;
   }
 }
 
