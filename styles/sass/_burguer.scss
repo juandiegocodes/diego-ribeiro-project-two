@@ -1,4 +1,14 @@
 
+//  hamburguer menu
+
+.menu-btno, .menu-icon {
+    display: none;
+}
+
+.get-in-touch-header {
+    position: relative;
+}
+
 input[type="checkbox"]:checked ~ .ulwrapper ul{
     display: flex;
     flex-direction: column;
