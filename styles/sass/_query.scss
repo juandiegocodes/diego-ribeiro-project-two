@@ -135,12 +135,13 @@
         }
     }
     
-    .blog-page aside {
+    .blog-page .blog-container  aside {
         width: 100%;
         order:4;
-        figure::after {
-            display: none;
-        }
+    }
+
+    .blog-container  aside figure::after {
+        display: none;
     }
 
     .blog-page .blog-container .article-container {

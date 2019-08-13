@@ -233,6 +233,8 @@ header {
 .yellow-button:hover {
   border: 3px white solid;
   border-radius: 50px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .yellow-button:active {
@@ -241,10 +243,14 @@ header {
           box-shadow: 0 5px #666;
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .yellow-button:focus {
   border: 2px red solid;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 h1, h2, h3, h4, .yellow-button {
@@ -299,6 +305,10 @@ p {
   margin: 0;
 }
 
+footer p {
+  color: #0d457f;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -308,6 +318,19 @@ p {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 50%;
 }
 
 .index-header {
@@ -789,10 +812,12 @@ article {
 .form-blog .input-container input[type="text"]:focus, .form-blog .input-container input[type="email"]:focus {
   border-radius: 50px;
   font-size: 1.5rem;
+  background-color: #2f569e;
 }
 
 .form-blog .input-container input[type="text"]:active, .form-blog .input-container input[type="email"]:active {
   border: 2px red solid;
+  background-color: #2f569e;
 }
 
 .text-area-container {
@@ -826,10 +851,12 @@ article {
 
 .text-area-container textarea:focus {
   font-size: 2rem;
+  background-color: #2f569e;
 }
 
 .text-area-container textarea:active {
   border: 2px red solid;
+  background-color: #2f569e;
 }
 
 input[type="submit"] {
@@ -1188,13 +1215,13 @@ input[type="checkbox"]:checked ~ .ulwrapper {
     position: static;
     margin-bottom: 0;
   }
-  .blog-page aside {
+  .blog-page .blog-container aside {
     width: 100%;
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
   }
-  .blog-page aside figure::after {
+  .blog-container aside figure::after {
     display: none;
   }
   .blog-page .blog-container .article-container {

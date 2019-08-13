@@ -1,8 +1,3 @@
-$primary-color: #ffffff;
-$secondary-color: #0d457f;
-$third-color: #fdd908;
-$fourth-color: #eafefc;
-
 // ________________-blog.html starts___________
 
 // header
@@ -173,9 +168,11 @@ article {
         input[type="text"]:focus,input[type="email"]:focus {
             border-radius: 50px;
             font-size: 1.5rem;
+            background-color:rgb(47, 86, 158);
         }
         input[type="text"]:active,input[type="email"]:active {
             border: 2px red solid;
+            background-color:rgb(47, 86, 158);
         }
     }
 }
@@ -195,9 +192,11 @@ article {
     }
     textarea:focus {
         font-size: 2rem;
+        background-color:rgb(47, 86, 158);
     }
     textarea:active {
         border: 2px red solid;
+        background-color:rgb(47, 86, 158);
     }
 }
 
