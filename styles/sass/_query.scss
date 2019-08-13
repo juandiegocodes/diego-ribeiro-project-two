@@ -16,6 +16,10 @@
 
 /* Portrait tablet and small desktops */
 @media (max-width: 1185px){
+    aside figure::after {
+        content: "";
+        height: 20%;
+    }
     .header-container{
         flex-direction: column;
         justify-content: space-between;
@@ -330,6 +334,10 @@
         padding: 4rem 0.5rem;
         box-shadow: none;
         border: $third-color solid 1px;
+    }
+
+    .get-in-touch-header h1 {
+        font-size: 43px;
     }
 
     .contact-box1 p {

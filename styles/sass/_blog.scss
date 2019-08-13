@@ -165,15 +165,25 @@ article {
         input::placeholder {
             opacity: 1;
         }
-        input[type="text"]:focus,input[type="email"]:focus {
-            border-radius: 50px;
-            font-size: 1.5rem;
-            background-color:rgb(47, 86, 158);
-        }
-        input[type="text"]:active,input[type="email"]:active {
-            border: 2px red solid;
-            background-color:rgb(47, 86, 158);
-        }
+    }
+}
+.blog-container {
+    input[type="text"]:focus,input[type="email"]:focus {
+        border-radius: 50px;
+        font-size: 1.5rem;
+        background-color:$third-color;
+    }
+    input[type="text"]:active,input[type="email"]:active {
+        border: 2px red solid;
+        background-color: $third-color;
+    }
+    textarea:focus {
+        font-size: 2rem;
+        background-color: $third-color;
+    }
+    textarea:active {
+        border: 2px red solid;
+        background-color: $third-color;
     }
 }
 
@@ -189,14 +199,6 @@ article {
     }
     textarea::placeholder {
         opacity: 1;
-    }
-    textarea:focus {
-        font-size: 2rem;
-        background-color:rgb(47, 86, 158);
-    }
-    textarea:active {
-        border: 2px red solid;
-        background-color:rgb(47, 86, 158);
     }
 }
 

@@ -809,15 +809,25 @@ article {
   opacity: 1;
 }
 
-.form-blog .input-container input[type="text"]:focus, .form-blog .input-container input[type="email"]:focus {
+.blog-container input[type="text"]:focus, .blog-container input[type="email"]:focus {
   border-radius: 50px;
   font-size: 1.5rem;
-  background-color: #2f569e;
+  background-color: #fdd908;
 }
 
-.form-blog .input-container input[type="text"]:active, .form-blog .input-container input[type="email"]:active {
+.blog-container input[type="text"]:active, .blog-container input[type="email"]:active {
   border: 2px red solid;
-  background-color: #2f569e;
+  background-color: #fdd908;
+}
+
+.blog-container textarea:focus {
+  font-size: 2rem;
+  background-color: #fdd908;
+}
+
+.blog-container textarea:active {
+  border: 2px red solid;
+  background-color: #fdd908;
 }
 
 .text-area-container {
@@ -847,16 +857,6 @@ article {
 
 .text-area-container textarea::placeholder {
   opacity: 1;
-}
-
-.text-area-container textarea:focus {
-  font-size: 2rem;
-  background-color: #2f569e;
-}
-
-.text-area-container textarea:active {
-  border: 2px red solid;
-  background-color: #2f569e;
 }
 
 input[type="submit"] {
@@ -913,6 +913,11 @@ input[type="submit"]:active {
 
 .contact-box2 .form-blog input[type="text"], .contact-box2 .form-blog input[type="email"] {
   padding-left: 1rem;
+  color: white;
+}
+
+.contact-box2 .form-blog textarea {
+  color: white;
 }
 
 .contact-box2 .form-blog input::-webkit-input-placeholder {
@@ -992,6 +997,25 @@ input[type="submit"]:active {
   color: #0d457f;
 }
 
+.contact input[type="text"]:focus, .contact input[type="email"]:focus {
+  border-radius: 50px;
+  font-size: 1.5rem;
+  border: 2px red solid;
+}
+
+.contact input[type="text"]:active, .contact input[type="email"]:active {
+  border: 2px red solid;
+}
+
+.contact textarea:focus {
+  font-size: 2rem;
+  border: 2px red solid;
+}
+
+.contact textarea:active {
+  border: 2px red solid;
+}
+
 .menu-btno, .menu-icon {
   display: none;
 }
@@ -1063,6 +1087,10 @@ input[type="checkbox"]:checked ~ .ulwrapper {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 1185px) {
+  aside figure::after {
+    content: "";
+    height: 20%;
+  }
   .header-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1425,6 +1453,9 @@ input[type="checkbox"]:checked ~ .ulwrapper {
     -webkit-box-shadow: none;
             box-shadow: none;
     border: #fdd908 solid 1px;
+  }
+  .get-in-touch-header h1 {
+    font-size: 43px;
   }
   .contact-box1 p {
     text-align: center;
