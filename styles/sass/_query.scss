@@ -30,6 +30,7 @@
         align-items: flex-end;
         h1 {
             align-self: flex-start;
+            margin-bottom: 0;
         }
         figure {
             position: static;
@@ -349,7 +350,7 @@
 }
 
 @media (max-height: 850px) {
-    header{
+    .blog-header,.get-in-touch-header, .index-header{
         height: auto;
     }
     aside figure::after {

@@ -1115,6 +1115,7 @@ input[type="checkbox"]:checked ~ .ulwrapper {
   .header-bottom-container h1 {
     -ms-flex-item-align: start;
         align-self: flex-start;
+    margin-bottom: 0;
   }
   .header-bottom-container figure {
     position: static;
@@ -1466,7 +1467,7 @@ input[type="checkbox"]:checked ~ .ulwrapper {
 }
 
 @media (max-height: 850px) {
-  header {
+  .blog-header, .get-in-touch-header, .index-header {
     height: auto;
   }
   aside figure::after {
