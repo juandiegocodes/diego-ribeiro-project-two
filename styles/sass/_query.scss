@@ -1,3 +1,19 @@
+// media querys
+@media (max-width: 1800px) {
+    .header-boat figure {
+            top: 8rem;
+    }
+    .blog-header .header-container h1, .get-in-touch-header h1 {
+        padding-bottom:10%;
+        margin-bottom: 0; 
+    }
+}
+@media (max-width: 1400px) {
+    .header-boat figure {
+        top: 5rem;
+    }
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 1185px){
     .header-container{
@@ -119,7 +135,7 @@
         }
     }
     
-    .blog-page .blog-container aside {
+    .blog-page aside {
         width: 100%;
         order:4;
         figure::after {
@@ -271,7 +287,11 @@
         text-align: center;
     }
     .form-blog .input-container input[type="text"], .form-blog .input-container input[type="email"] {
-        padding: 1rem 0;
+        padding: 1rem 1rem;
+    }
+
+    .form-blog .input-container input[type="email"]:placeholder-shown {
+        text-overflow: ellipsis;
     }
 
     .contact-box2 .form-blog {
@@ -313,6 +333,9 @@
 
     .contact-box1 p {
         text-align: center;
+    }
+    .get-in-touch-header h1 {
+        margin-left: 0;
     }
 }
 
