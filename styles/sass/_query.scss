@@ -123,6 +123,7 @@
                 padding-left: 0%;
             }
         }
+
     }
     .gallery {
         ul {
@@ -219,6 +220,13 @@
     .blog-header {
         position: relative;
     }
+    .form-blog .input-container {
+        flex-direction: column;
+    }
+    .form-blog .input-container input[type="text"], .form-blog .input-container input[type="email"] {
+        width: 97%;
+        margin-bottom: 3%;
+    }
 }
 
 /* Landscape phones and down */
@@ -314,6 +322,14 @@
     }
     footer p {
         text-align: center;
+    }
+
+    .comment-box .comment-text {
+        width: 70%;
+    }
+
+    .comment-box figure {
+        width: 30%;
     }
 }
 /*Even smaller*/
